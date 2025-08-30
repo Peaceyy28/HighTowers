@@ -1,0 +1,990 @@
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+  :root {
+      --main-brand-color: rgb(13, 151, 243);
+      --secondary-brand-color: rgb(127, 127, 127);
+  }
+
+  body {
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  }
+
+  .header {
+      color: var(--main-brand-color);
+      display: flex;
+      max-width: 1200px;
+      padding: 2rem 1rem;
+      gap: 2rem;
+      align-items: center;
+      justify-items: center;
+      justify-content: center;
+      margin-inline: auto;
+  }
+
+  .header h2 {
+      display: block;
+      font-size: 1.5rem;
+      font-weight: bold;
+  }
+
+  .nav_menu {
+      font-size: 1rem;
+      color: white;
+      cursor: pointer;
+  }
+
+  .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem
+  }
+
+  .nav-links a {
+      color: var(--main-brand-color);
+      cursor: pointer;
+      transition: transform 0.3s ease-in-out;
+      transform-origin: center;
+      display: inline-block;
+      white-space: nowrap;
+      list-style: none;
+      text-decoration: none;
+  }
+
+  .nav-links a:hover {
+      transform: scale(1.2);
+
+  }
+
+
+  .login-button {
+      gap: 100px;
+      background-color: white;
+      border: 1px solid var(--main-brand-color);
+      border-radius: 5rem;
+      padding: 0.75rem 2rem;
+      font-weight: 600;
+      width: 150px;
+      display: flex;
+      white-space: nowrap;
+      align-items: center;
+      text-decoration: none;
+      justify-content: center;
+      transition: all 0.3s ease;
+  }
+
+  .login-button:hover {
+      background-color: var(--main-brand-color);
+
+  }
+
+  .login-button a {
+      color: var(--main-brand-color);
+      transition: all 0.3s ease;
+      text-decoration: none;
+  }
+
+  .login-button a:hover {
+      color: white;
+  }
+
+  .image {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+  }
+
+  .views {
+      position: relative;
+      width: 100%;
+      height: 500px;
+  }
+
+  .sky {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      padding-top: 10px;
+      border-radius: 5px;
+  }
+
+  .airplane {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 1000px;
+      height: auto;
+  }
+
+  .text p {
+      position: absolute;
+      bottom: 72%;
+      left: 13%;
+      font-weight: 600;
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+      display: block;
+  }
+
+  .text h1 {
+      position: absolute;
+      bottom: 26%;
+      left: 13%;
+      width: 500px;
+      margin-bottom: 2.5rem;
+      line-height: 4.5rem;
+      display: block;
+      font-size: 4.3rem;
+      color: black;
+      font-weight: bold;
+  }
+
+  .flight {
+      color: white;
+  }
+
+  .sign {
+      color: var(--main-brand-color);
+  }
+
+  .btn {
+      position: absolute;
+      font-size: 1rem;
+      display: flex;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      bottom: 22%;
+      left: 13%;
+      background-color: var(--main-brand-color);
+      border-radius: 5rem;
+      border-style: none;
+      width: 200px;
+      height: 45px;
+      align-items: center;
+      justify-content: center;
+      transition: background-color 0.3s ease;
+  }
+
+  .btn:hover {
+      background-color: rgb(9, 115, 186);
+
+  }
+
+  .play {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      bottom: 22%;
+      left: 29%;
+      background-color: white;
+      cursor: pointer;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      transition: background-color 0.3s ease;
+  }
+
+  .play:hover {
+      background-color: var(--main-brand-color);
+  }
+
+  .icon {
+      color: var(--main-brand-color);
+      transition: color 0.3s ease;
+  }
+
+  .icon:hover {
+      color: white;
+  }
+
+  .text2 {
+      margin-bottom: 0.5rem;
+      justify-items: center;
+
+  }
+
+  .destinations {
+      margin-top: 5rem;
+      text-align: center;
+  }
+
+  .cities {
+      display: grid;
+      grid-template-columns: repeat(3, 300px);
+      gap: 2rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      justify-items: center;
+      justify-content: center;
+  }
+
+  .newyork {
+      width: 300px;
+      height: 170px;
+      border-radius: 1.5rem;
+      margin-top: 50px;
+      transition: transform 0.3s ease-in-out;
+      gap: 2rem;
+  }
+
+  .newyork:hover {
+      transform: scale(1.1);
+  }
+
+  .star {
+      color: white;
+      background-color: rgb(13, 151, 243);
+      padding: 0.2rem 0.3rem;
+      gap: 0.3rem;
+      display: flex;
+      border-radius: 1rem;
+      align-items: center;
+      justify-items: center;
+      justify-content: center;
+
+  }
+
+  .rating {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      padding: 1rem;
+      justify-content: space-between;
+  }
+
+  .Benefits {
+      text-align: center;
+      margin: 5rem auto;
+      max-width: 1200px;
+      padding: 0 1rem;
+  }
+
+  .Journey {
+      margin-top: 100px;
+  }
+
+  .content h4 {
+      margin-bottom: 1rem;
+      font-size: 0.9rem;
+      color: white;
+  }
+
+  .container {
+      display: grid;
+      grid-template-columns: repeat(3, 250px);
+      gap: 8rem;
+      justify-content: center;
+  }
+
+  .box {
+      border-radius: 1rem;
+      margin-top: 2rem;
+      text-align: left;
+      padding: 1.5rem;
+      height: 150px;
+      width: 350px;
+      position: relative;
+      overflow: hidden;
+      background-color: rgb(249, 248, 248);
+      border: 1px solid rgb(13, 142, 229);
+      transition: all 0.3s ease;
+  }
+
+  .box:hover {
+      background-color: var(--main-brand-color);
+      color: white;
+
+  }
+
+
+
+  .box .label {
+      display: block;
+      padding: 1rem;
+      text-align: center;
+      font-weight: bold;
+      cursor: pointer;
+      text-align: center;
+      transition: opacity 0.3s ease;
+  }
+
+  .content {
+      width: 350px;
+      height: 150px;
+      align-items: center;
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 5px;
+      justify-items: center;
+      font-size: 0.9rem;
+      font-weight: bold;
+      background-color: var(--main-brand-color);
+      transform: translateY(100%);
+      transition: 0.6s ease-out, opacity 0.6s ease-out;
+  }
+
+  .box:hover .content {
+      transform: translateY(0);
+      opacity: 1;
+  }
+
+
+  .box .content h4 {
+      margin-bottom: 0.8rem;
+  }
+
+  .box .content p {
+      font-size: 0.95rem;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+      justify-items: center;
+      line-height: 1.5;
+  }
+
+  .box .content p:hover {
+      color: white;
+  }
+
+  .icon {
+      font-size: 2rem;
+
+  }
+
+  .kid {
+      max-width: 100%;
+      height: auto;
+
+  }
+
+  .note2 {
+      width: 100%;
+  }
+
+  .wanderlust {
+      display: grid;
+      grid-template-columns: 30% 60%;
+      max-width: 1200px;
+      gap: 1rem;
+      align-items: center;
+      margin: 0 auto;
+  }
+
+  .note h2 {
+      font-size: 3rem;
+      padding-bottom: 1rem;
+  }
+
+  .note2 p {
+      font-size: 0.75rem;
+      line-height: 1.2rem;
+      color: var(--secondary-brand-color);
+
+  }
+
+  .paragraph2 {
+      font-size: 0.75rem;
+      line-height: 1.2rem;
+      color: var(--secondary-brand-color);
+      padding-top: 1rem;
+  }
+
+  .book-a-flight .now {
+      width: 100%;
+      margin-top: 1rem;
+      margin-bottom: 1.75rem;
+      font-weight: 600;
+      color: black;
+      background-image: url(Images2/header-bg.jpg);
+      padding: 1rem;
+      background-position: center;
+      border-radius: 5px;
+      border-color: none;
+  }
+
+  .now {
+      font-size: 1rem;
+      background-color: var(--main-brand-color);
+      cursor: pointer;
+      transition: 0.3s;
+  }
+
+  .now:hover {
+      color: white;
+  }
+
+
+  .reviews {
+      display: grid;
+      grid-template-columns: repeat(3, 300px);
+      gap: 2rem;
+      margin-top: 10rem;
+      justify-content: center;
+  }
+
+  .years {
+      background-color: rgb(246, 244, 244);
+      padding: 2rem 1rem;
+      border-radius: 2rem;
+      width: 300px;
+      height: 200px;
+      text-align: center;
+  }
+
+  .years h1 {
+      padding: 2rem;
+      font-size: 4rem;
+      color: var(--main-brand-color);
+  }
+
+  .years p {
+      color: var(--secondary-brand-color);
+  }
+
+  .Discovery {
+      padding: 5rem 3rem;
+      max-width: 1200px;
+      margin: auto;
+  }
+
+  .Views {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      margin-top: 4rem;
+      gap: 2rem;
+
+  }
+
+  .Views1 {
+      width: 22rem;
+      height: 17rem;
+      border-radius: 1rem;
+      margin-top: 6rem;
+      border: 1px solid var(--main-brand-color);
+  }
+
+  .Views1 span {
+      display: inline-block;
+      align-items: center;
+      justify-content: center;
+      justify-items: center;
+      font-size: 1.5rem;
+      color: var(--main-brand-color);
+      background-color: rgb(254, 255, 255);
+      padding: 40px 150px;
+      border-radius: 100%;
+  }
+
+  .Views h3 {
+      text-align: center;
+      font-size: 1.5rem;
+      padding-bottom: 1rem;
+      line-height: 1.5;
+  }
+
+  .Views p {
+      text-align: center;
+      font-size: 0.98rem;
+      line-height: 1.5;
+      font-weight: 450;
+  }
+
+  .testimonals {
+      margin-bottom: 60px;
+  }
+
+  .testimonials-text {
+      padding-left: 15rem;
+  }
+
+  .testimonials-text h3 {
+      padding-bottom: 5px;
+  }
+
+  .card img {
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+      margin-right: 1rem;
+  }
+
+  .card p {
+
+      margin-top: 1rem;
+      font-size: 0.9rem;
+  }
+
+  .names {
+      padding-top: 8px;
+      padding-left: 10px;
+      display: flex;
+
+      padding-bottom: 8px;
+      border-radius: 15px;
+  }
+
+  .card-container1 {
+      display: grid;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .card-container {
+      display: flex;
+      /* justify-content: center;
+            align-items: center;
+            justify-items: center; */
+      gap: 10px;
+      overflow-x: auto;
+      scroll-snap-type: mandatory;
+      padding-bottom: 5rem;
+  }
+
+  .card-container::-webkit-scrollbar {
+      display: none;
+  }
+
+  .clients_content {
+      background-color: white;
+      padding: 1rem;
+
+  }
+
+  .card {
+      width: 10rem;
+      height: 17rem;
+      border-radius: 1rem;
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+      background-color: #f3f4f6;
+      border: 4px solid #f3f4f6;
+      scroll-snap-align: start;
+      flex: 0 0 350px;
+      align-items: center;
+      justify-content: center;
+
+  }
+
+  .ratingss {
+      color: var(--main-brand-color);
+      padding-left: 1rem;
+  }
+
+  .footer {
+      background-color: rgb(243, 243, 243);
+      height: 30rem;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1.5fr;
+      padding: 4rem 10rem;
+      gap: 4rem 2rem
+  }
+
+  .footer_socials {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      align-items: center;
+      margin-top: 1rem;
+  }
+
+  .footer_socials a {
+      display: inline-block;
+      font-size: 1.25rem;
+      color: white;
+      background-color: var(--main-brand-color);
+      padding: 7px 10px;
+      border-radius: 100%;
+      text-decoration: none;
+  }
+
+  .footer_socials li {
+      list-style: none;
+  }
+
+  .towers h2 {
+      margin-bottom: 2rem;
+  }
+
+  .towers p {
+      color: var(--secondary-brand-color);
+      max-width: 310px;
+  }
+
+  .quick-links h3 {
+      margin-bottom: 2rem;
+  }
+
+  .quick-links li {
+      line-height: 2;
+      list-style: none;
+      color: var(--secondary-brand-color)
+  }
+
+  .quick-links a {
+      text-decoration: none;
+      color: var(--secondary-brand-color)
+  }
+
+  .input {
+      display: grid;
+  }
+
+  .subscribe h3 {
+      margin-bottom: 2rem;
+
+  }
+
+
+  .subscribe input {
+      width: 20rem;
+      height: 3rem;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+
+  }
+
+  .subscribe .sub {
+      width: 20rem;
+      height: 3rem;
+      background-color: var(--main-brand-color);
+      color: white;
+      font-weight: 600;
+      border-radius: 8px;
+      border: 0;
+
+  }
+
+  .contacts h3 {
+      margin-bottom: 2rem;
+  }
+
+  .contacts .num {
+      line-height: 2;
+      color: var(--secondary-brand-color);
+  }
+
+  .copyright {
+      text-align: center;
+      background-color: rgb(243, 243, 243);
+      color: var(--secondary-brand-color);
+      padding-bottom: 1rem;
+  }
+
+  .breadcrumb {
+      display: none;
+  }
+
+  .breadcrumb ol {
+      list-style: none;
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+      padding: 0;
+      margin: 0 1rem;
+  }
+
+  .breadcrumb li {
+      color: var(--secondary-brand-color);
+      font-size: 0.95rem;
+  }
+
+  .breadcrumb li+li:before {
+      content: "›";
+      color: var(--secondary-brand-color);
+      margin: 0 0.5rem;
+      font-weight: 600;
+  }
+
+  .breadcrumb a {
+      text-decoration: none;
+      color: var(--main-brand-color);
+  }
+
+  @media (max-width: 1024px) {
+      .header {
+          flex-direction: column;
+          padding: 1rem;
+          gap: 0.5rem;
+          align-items: center;
+      }
+
+      .header h2 {
+          align-self: flex-start;
+
+      }
+
+      .header .nav-links {
+          color: aliceblue;
+          border-radius: 50%;
+          border-bottom: unset;
+
+      }
+
+      .airplane {
+          width: 700px;
+
+          .breadcrumb {
+              display: block;
+              margin: 0.25rem 0 0.75rem;
+          }
+
+          .breadcrumb ol {
+              justify-content: center;
+              gap: 0.4rem;
+          }
+
+          .breadcrumb li {
+              color: var(--secondary-brand-color);
+              font-size: 0.95rem;
+          }
+
+          .breadcrumb a {
+              color: var(--main-brand-color);
+              font-weight: 600;
+          }
+
+          .breadcrumb li+li:before {
+              color: var(--secondary-brand-color);
+              margin: 0 0.4rem;
+          }
+
+          /* Hide floating icon on mobile to match design */
+          .breadcrumb-icon {
+              display: none !important;
+          }
+
+          .login-button {
+              width: auto;
+              padding: 0.5rem 1rem;
+              font-size: 0.9rem;
+              margin: 0 auto;
+          }
+
+          .text p {
+              bottom: 82%;
+              left: 8%;
+              font-size: 0.95rem;
+          }
+
+          .text h1 {
+              bottom: 30%;
+              left: 8%;
+              width: 70%;
+              font-size: 3.2rem;
+              line-height: 3.6rem;
+          }
+
+          .btn {
+              bottom: 24%;
+              left: 8%;
+              width: 180px;
+          }
+
+          .play {
+              left: 50%;
+              bottom: 24%;
+          }
+
+          .cities {
+              grid-template-columns: repeat(2, 1fr);
+              gap: 1rem;
+          }
+
+          .newyork {
+              width: 100%;
+              height: auto;
+              max-width: 440px;
+          }
+
+          .container {
+              grid-template-columns: repeat(2, 1fr);
+              gap: 3rem;
+          }
+
+          .wanderlust {
+              grid-template-columns: 1fr;
+              padding: 0 1rem;
+          }
+
+          .Views {
+              grid-template-columns: repeat(2, 1fr);
+          }
+
+          .Views1 {
+              width: auto;
+              margin-top: 2rem;
+          }
+
+          .reviews {
+              grid-template-columns: repeat(2, 1fr);
+          }
+
+          .footer {
+              grid-template-columns: 1fr 1fr;
+              padding: 3rem;
+              height: auto;
+          }
+
+          .testimonials-text {
+              padding-left: 2rem;
+          }
+
+          .card-container {
+              gap: 1rem;
+              padding-bottom: 2rem;
+          }
+      }
+  }
+
+  @media (max-width: 600px) {
+      .header {
+          flex-direction: column;
+          padding: 1rem;
+          gap: 0.5rem;
+      }
+
+      .login-button {
+          display: none;
+      }
+
+      .breadcrumb {
+          display: block;
+      }
+
+      .breadcrumb ol {
+          justify-content: flex-start;
+      }
+
+      .login-button {
+          width: auto;
+          padding: 0.5rem 1rem;
+          font-size: 0.9rem;
+      }
+
+      .views {
+          height: 320px;
+      }
+
+      .airplane {
+          width: 420px;
+          left: 50%;
+          transform: translateX(-50%);
+          bottom: -10px;
+      }
+
+      .text p {
+          bottom: 70%;
+          left: 6%;
+          font-size: 0.85rem;
+      }
+
+      .text h1 {
+          bottom: 34%;
+          left: 6%;
+          width: 88%;
+          font-size: 2.2rem;
+          line-height: 2.6rem;
+      }
+
+      .btn {
+          bottom: 18%;
+          left: 6%;
+          width: 160px;
+          font-size: 0.95rem;
+      }
+
+      .play {
+          left: 50%;
+          bottom: 18%;
+
+      }
+
+      .cities {
+          grid-template-columns: 1fr;
+          gap: 1rem;
+          padding: 0 1rem;
+      }
+
+      .container {
+          grid-template-columns: 1fr;
+          gap: 2rem;
+      }
+
+      .Views {
+          grid-template-columns: 1fr;
+      }
+
+      .Views1 {
+          width: 100%;
+          margin-top: 1rem;
+      }
+
+      .reviews {
+          grid-template-columns: 1fr;
+          gap: 1rem;
+          margin-top: 4rem;
+      }
+
+      .footer {
+          grid-template-columns: 1fr;
+          padding: 2rem;
+          height: auto;
+      }
+
+      .footer_socials a {
+          font-size: 1rem;
+          padding: 6px 8px;
+      }
+
+      .card {
+          display: grid;
+          gap: 14px;
+          grid-template-columns: 1;
+          width: 280px;
+      }
+
+      .card-container {
+          overflow-x: scroll;
+          gap: 1rem;
+      }
+
+      body {
+          font-size: 15px;
+      }
+
+
+      .testimonials-text {
+          padding-left: 0 !important;
+          text-align: center;
+          margin: 0 auto;
+          max-width: 360px;
+      }
+
+      .testimonials-text h3 {
+          text-align: center;
+      }
+
+      .testimonials-text p {
+          text-align: center;
+      }
+  }
+
+
+  .airplane {
+      max-width: 100%;
+      height: auto;
+      transform-origin: center;
+  }
+
+  .newyork,
+  .kid,
+  .sky {
+      max-width: 100%;
+      height: auto;
+  }
